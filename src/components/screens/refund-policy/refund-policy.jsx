@@ -104,7 +104,7 @@ const RefundPolicyScreen = () => {
                 </strong>{" "}
                 /{" "}
                 <strong>
-                  <a href="tel:+91 9133343776">+91 9133343776</a>
+                  <a href="tel:+91 9940928610">+91 9940928610</a>
                 </strong>{" "}
                 within 48 hours of delivery.
               </p>
@@ -147,7 +147,7 @@ const RefundPolicyScreen = () => {
                   </strong>
                   &nbsp;/&nbsp;
                   <strong>
-                    <a href="tel:+91 9133343776">+91 9133343776</a>
+                    <a href="tel:+91 9940928610">+91 9940928610</a>
                   </strong>
                   &nbsp; within 48 hours of receiving your order.
                 </li>
@@ -179,7 +179,7 @@ const RefundPolicyScreen = () => {
                 <br />
                 <strong>Phone</strong>:{" "}
                 <strong>
-                  <a href="tel:+91 9133343776">+91 9133343776</a>
+                  <a href="tel:+91 9940928610">+91 9940928610</a>
                 </strong>
               </p>
             </div>

@@ -42,7 +42,7 @@ const AboutScreen = () => {
             </p>
             <br />
             <p>
-              Backed by <span>Edens Bounty Foods</span>, Yaja quickly evolved
+              Backed by <span>Edens Bounty Foods LLP</span>, Yaja quickly evolved
               into more than just a drink; it became a mission. Ajay, drawing on
               his expertise in food technology, developed a range of beverages
               crafted from natural ingredients like fruit pulp, basil seeds, and
