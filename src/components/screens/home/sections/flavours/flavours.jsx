@@ -22,11 +22,7 @@ const FlavoursSection = () => {
       name: "Blueberry",
       img: "blueberry.png",
     },
-    {
-      id: "3",
-      name: "Mango",
-      img: "mango.png",
-    },
+  
     {
       id: "5",
       name: "Coming Soon..!",
@@ -57,6 +53,23 @@ const FlavoursSection = () => {
 
           <div className={styles.wrap}>
             {flavours.map((flavour, idx) => {
+              if (flavour.isGift) {
+                return (
+                  <div key={flavour.id} className={styles.flavour}>
+                    <Image
+                      src={
+                        flavour?.isGift
+                          ? `/assets/svg/gift${(idx % 2) + 1}.svg`
+                          : `/images/flavours/${flavour.img}`
+                      }
+                      alt={flavour.name}
+                      height={120}
+                      width={120}
+                    />
+                    <p>{flavour.name}</p>
+                  </div>
+                );
+              }
               return (
                 <Link href="/" key={flavour.id} className={styles.flavour}>
                   <Image

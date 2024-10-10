@@ -21,6 +21,46 @@ const Blob = ({ blob }) => {
   );
 };
 
+export const SpecsBottle = () => {
+  const blobs = [
+    {
+      id: "1",
+      text: "4G ENERGY",
+    },
+    {
+      id: "2",
+      text: "ZERO SUGAR",
+    },
+    {
+      id: "3",
+      text: "4G BCAA'S",
+    },
+    {
+      id: "4",
+      text: "ZERO GMO'S",
+    },
+  ];
+
+  return (
+    <div className={styles.left}>
+      <div className={styles.img}>
+        {blobs.map((blob) => {
+          return <Blob key={`blob_${blob.id}`} blob={blob} />;
+        })}
+        <Image
+          src="/assets/bottle.avif"
+          height={600}
+          width={200}
+          alt="bottle"
+          className={styles.btl}
+        />
+      </div>
+    </div>
+  );
+};
+
+
+
 const SpecsSection = () => {
   const specs1 = [
     {
@@ -51,45 +91,13 @@ const SpecsSection = () => {
     },
   ];
 
-  const blobs = [
-    {
-      id: "1",
-      text: "4G ENERGY",
-    },
-    {
-      id: "2",
-      text: "ZERO SUGAR",
-    },
-    {
-      id: "3",
-      text: "4G BCAA'S",
-    },
-    {
-      id: "4",
-      text: "ZERO GMO'S",
-    },
-  ];
-
   return (
     <section className={styles.SpecsSection}>
       <CustomContainer>
         <CustomSection>
           <Row>
             <Col xs={12} lg={6}>
-              <div className={styles.left}>
-                <div className={styles.img}>
-                  {blobs.map((blob) => {
-                    return <Blob key={`blob_${blob.id}`} blob={blob} />;
-                  })}
-                  <Image
-                    src="/assets/bottle.avif"
-                    height={600}
-                    width={200}
-                    alt="bottle"
-                    className={styles.btl}
-                  />
-                </div>
-              </div>
+              <SpecsBottle />
             </Col>
             <Col xs={12} lg={6}>
               <div className={styles.right}>

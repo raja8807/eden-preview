@@ -15,11 +15,11 @@ const BannerSection = () => {
 
             <div className={styles.l2}>
               <div className={styles.btn1}>
-                <CustomButton>SHOP</CustomButton>
+                <CustomButton href='/shop'>SHOP</CustomButton>
               </div>
               <h1 className={`${fonts.font1} ${styles.h2}`}>Limitless You.</h1>
               <div className={styles.btn2}>
-                <CustomButton>SHOP</CustomButton>
+                <CustomButton href='/shop'>SHOP</CustomButton>
               </div>
             </div>
           </div>

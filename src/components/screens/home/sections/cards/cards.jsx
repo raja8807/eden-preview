@@ -5,13 +5,6 @@ import styles from "./cards.module.scss";
 import { Col, Image, Row } from "react-bootstrap";
 import CustomButton from "@/components/ui/custom_button/custom_button";
 
-
-// Import Swiper React components
-
-
-
-
-
 const CardsSection = () => {
   const orangeCardSpecs = [
     {

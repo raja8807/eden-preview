@@ -4,32 +4,33 @@ import React from "react";
 import styles from "./our_flavours.module.scss";
 import { Carousel, Image } from "react-bootstrap";
 import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
+import Link from "next/link";
 
-const Product = () => {
-  return (
-    <Carousel.Item>
-      <div className={styles.Product}>
-        <Image src="/assets/bottle.avif" fluid alt="bottle" />
-      </div>
-    </Carousel.Item>
-  );
-};
+// const Product = () => {
+//   return (
+//     <Carousel.Item>
+//       <div className={styles.Product}>
+//         <Image src="/assets/bottle.avif" fluid alt="bottle" />
+//       </div>
+//     </Carousel.Item>
+//   );
+// };
 
-const OurFlavours = () => {
-  const flavours = [
-    {
-      id: "Water Melon",
-      color: "red",
-    },
-    {
-      id: "Lychee",
-      color: "green",
-    },
-    {
-      id: "Blueberry",
-      color: "blue",
-    },
-  ];
+const OurFlavours = ({ products }) => {
+  // const flavours = [
+  //   {
+  //     id: "Water Melon",
+  //     color: "red",
+  //   },
+  //   {
+  //     id: "Lychee",
+  //     color: "green",
+  //   },
+  //   {
+  //     id: "Blueberry",
+  //     color: "blue",
+  //   },
+  // ];
 
   return (
     <section className={styles.OurFlavours}>
@@ -51,18 +52,20 @@ const OurFlavours = () => {
                 </div>
               }
             >
-              {flavours.map((f) => {
+              {products.map((f) => {
                 return (
                   <Carousel.Item key={f.id}>
                     <div className={styles.Product}>
                       <h4
-                        style={{ 
+                        style={{
                           color: f.color,
                         }}
                       >
-                        {f.id}
+                        {f.name}
                       </h4>
-                      <Image src="/assets/watermelon.png" alt="bottle" />
+                      <Link href={`/shop/${f.id}`}>
+                        <Image src={f.imageUrl} alt="bottle" />
+                      </Link>
                     </div>
                   </Carousel.Item>
                 );

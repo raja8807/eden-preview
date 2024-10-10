@@ -13,17 +13,17 @@ const LocationsSection = () => {
       color: "#c4ffcc",
     },
     {
-      id: "sfnvs",
+      id: "aelmglae",
       logo: "dalware_logo.svg",
       color: "#c4ffcc",
     },
     {
-      id: "sfnvs",
+      id: "ergslmsef",
       logo: "dalware_logo.svg",
       color: "#c4ffcc",
     },
     {
-      id: "sfnvs",
+      id: "aeofoaeo",
       logo: "dalware_logo.svg",
       color: "#c4ffcc",
     },

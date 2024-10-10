@@ -1,9 +1,9 @@
 import HomeScreen from "@/components/screens/home/home";
 
-const Home = () => {
+const Home = ({ products }) => {
   return (
     <>
-      <HomeScreen />
+      <HomeScreen products={products} />
     </>
   );
 };

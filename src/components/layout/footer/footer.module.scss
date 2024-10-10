@@ -37,6 +37,7 @@
 
           &:hover {
             opacity: 1;
+            color: $color_p3;
           }
 
           svg {
@@ -44,6 +45,22 @@
           }
         }
       }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    .links {
+      * {
+        color: rgb(176, 176, 176);
+      }
+      span {
+        margin: 0 20px;
+      }
+    }
+    @include respond-below(md) {
+      flex-direction: column;
     }
   }
 }

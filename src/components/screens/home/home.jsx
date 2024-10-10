@@ -8,17 +8,17 @@ import IngredientsSection from "./sections/ingredients/ingredients";
 import LocationsSection from "./sections/locations/locations";
 import TestimonialsSection from "./sections/testimonials/testimonials";
 
-const HomeScreen = () => {
+const HomeScreen = ({ products }) => {
   return (
     <div>
       <BannerSection />
-      <FlavoursSection />
+      <FlavoursSection products={products} />
       <SpecsSection />
-      <OurFlavours />
+      <OurFlavours products={products} />
       <CardsSection />
-      <IngredientsSection/>
-      <LocationsSection/>
-      <TestimonialsSection/>
+      <IngredientsSection />
+      <LocationsSection />
+      <TestimonialsSection />
     </div>
   );
 };

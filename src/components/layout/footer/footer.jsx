@@ -6,7 +6,7 @@ import SocialLinks from "@/components/ui/social_links/social_links";
 import Link from "next/link";
 import { ChevronRight, Link45deg } from "react-bootstrap-icons";
 
-const Footer = () => {
+const Footer = ({ products }) => {
   return (
     <footer className={styles.Footer}>
       <CustomContainer>
@@ -21,22 +21,34 @@ const Footer = () => {
             <div className={styles.box}>
               <h1>Quick Links</h1>
               <Link href="/"> Home</Link>
-              <Link href="/">Products</Link>
-              <Link href="/">Contact</Link>
-              <Link href="/">Shop Now</Link>
+              <Link href="/shop">Shop Now</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/contact">Contact</Link>
             </div>
             <div className={styles.box}>
               <h1>Flavours</h1>
-              <Link href="/">Lychee</Link>
-              <Link href="/">Blueberry</Link>
-              <Link href="/">Blueberry</Link>
-              <Link href="/">Blueberry</Link>
+              {products.map((product) => {
+                return (
+                  <Link key={product.id} href={`/shop/${product.id}`}>
+                    {product.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
         <hr />
         <br />
-        <div>&copy; 2024</div>
+        <div className={styles.bottom}>
+          <p>&copy; 2024</p>
+          <div className={styles.links}>
+            <Link href="/terms-conditions">Terms & Conditions</Link>
+            <span>|</span>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <span>|</span>
+            <Link href="/refund-policy">Refund Policy</Link>
+          </div>
+        </div>
       </CustomContainer>
     </footer>
   );
