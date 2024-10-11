@@ -62,16 +62,16 @@ const TestimonialsSection = () => {
             <br />
             EXPERIENCES
           </h1>
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
             porro perspiciatis maiores quasi reprehenderit architecto
             consectetur corporis ratione voluptatem dignissimos.
-          </p>
+          </p> */}
         </div>
       </CustomContainer>
       <br />
       <br />
-      <>
+      {/* <>
         <Swiper
           centeredSlides={true}
           spaceBetween={20}
@@ -128,7 +128,7 @@ const TestimonialsSection = () => {
             );
           })}
         </Swiper>
-      </>
+      </> */}
     </section>
   );
 };

@@ -55,11 +55,11 @@ const IngredientsSection = () => {
             <br />
             OUR INGREDIENTS
           </h1>
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
             porro perspiciatis maiores quasi reprehenderit architecto
             consectetur corporis ratione voluptatem dignissimos.
-          </p>
+          </p> */}
         </div>
       </CustomContainer>
       <br />
@@ -112,11 +112,11 @@ const IngredientsSection = () => {
                   </div>
                   <div className={styles.txt}>
                     <h1>{i.name}</h1>
-                    <p>
+                    {/* <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Aut ipsa neque nemo reprehenderit commodi praesentium ut
                       accusantium repellat aliquid saepe.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </SwiperSlide>

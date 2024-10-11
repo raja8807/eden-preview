@@ -30,11 +30,11 @@ const CardsSection = () => {
         <CustomSection>
           <div className={styles.head}>
             <h1>{"Elevate your game with focused energy".toUpperCase()}</h1>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               molestias et voluptatibus perferendis impedit minus. Ipsa, dolor?
               Dolores, ex nam.
-            </p>
+            </p> */}
           </div>
 
           <br />

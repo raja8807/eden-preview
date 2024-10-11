@@ -102,11 +102,11 @@ const SpecsSection = () => {
             <Col xs={12} lg={6}>
               <div className={styles.right}>
                 <h1>A BOOST OF HIGH QUALITY ENERGY</h1>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Ipsum, quisquam voluptatem nihil non a eligendi dolore
                   deleniti recusandae error. Hic.
-                </p>
+                </p> */}
                 <div className={styles.specs}>
                   <div>
                     {specs1.map((spec) => {
